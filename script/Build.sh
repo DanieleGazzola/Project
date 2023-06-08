@@ -4,7 +4,7 @@ g++ -o test1 googletest/src/gtest_main.cc googletest/samples/sample1_unittest.cc
 ./test1
 
 g++ -o test9 googletest/samples/sample9_unittest.cc googletest/samples/sample1.cc googletest/samples/sample2.cc googletest/samples/sample4.cc -lgtest -lgtest_main -lpthread
-./test9
+./test9 --terse_output
 
 #g++ -o test10 googletest/samples/sample10_unittest.cc googletest/samples/sample1.cc googletest/samples/sample2.cc googletest/samples/sample4.cc -lgtest -lgtest_main -lpthread
 #./test10
