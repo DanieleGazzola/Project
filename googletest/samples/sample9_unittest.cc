@@ -123,7 +123,7 @@ int main(int argc, char** argv) {
     // over it after adding it to the list.
     listeners.Append(new TersePrinter);
   }
-  int ret_val = RUN_ALL_TESTS();
+  return RUN_ALL_TESTS();
 
   // This is an example of using the UnitTest reflection API to inspect test
   // results. Here we discount failures from the tests we expected to fail.
