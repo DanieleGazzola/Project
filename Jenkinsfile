@@ -1,8 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Test') {
       steps {
+	echo 'Testing...'
+	sh 'cmake --version'
+	sh 'make --version'
         sh 'chmod +x script/Build.sh'
         sh 'script/Build.sh'
       }
