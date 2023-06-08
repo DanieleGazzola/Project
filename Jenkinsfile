@@ -1,7 +1,8 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('Test') {
+      agent { node { label 'build' } }
       steps {
 	echo 'Testing...'
 	sh 'cmake --version'
