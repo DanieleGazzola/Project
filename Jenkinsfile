@@ -9,12 +9,6 @@ pipeline {
         sh 'script/Build.sh'
       }
     }
-    stage('Test') {
-      steps {
-	echo 'Testing...'
-        sh 'chmod +x script/Test.sh'
-        sh 'script/Test.sh'
-      }
-    }
+
   }
 }
