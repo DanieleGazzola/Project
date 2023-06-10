@@ -10,10 +10,8 @@ project "Project"
 
     configuration "Debug"
         defines { "DEBUG" }
-        symbols "On"
         targetdir "bin/%{cfg.buildcfg}"
 
     configuration "Release"
         defines { "NDEBUG" }
-        symbols "On"
         targetdir "bin/%{cfg.buildcfg}"
