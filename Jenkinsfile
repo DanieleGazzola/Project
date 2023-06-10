@@ -1,7 +1,8 @@
 pipeline {
-  agent { node { label 'build' } }
+  agent none
   stages {
     stage('Build') {
+      agent { node { label 'build' } }
       steps {
 	echo 'Building...'
         sh 'chmod +x script/Build.sh'
@@ -10,6 +11,7 @@ pipeline {
       }
     }
     stage('Test') {
+      agent { node { label 'build' } }
       steps {
 	echo 'Testing...'
         sh 'chmod +x script/Test.sh'
