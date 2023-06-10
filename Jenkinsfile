@@ -7,10 +7,11 @@ pipeline {
 	echo 'Building...'
         sh 'chmod +x script/Build.sh'
         sh 'script/Build.sh'
+        archiveArtifacts artifacts: 'bin/Debug/*', fingerprint: true
       }
     }
     stage('Test') {
-      agent { node { label 'master' } }
+      agent { node { label 'build' } }
       steps {
 	echo 'Testing...'
         sh 'chmod +x script/Test.sh'
