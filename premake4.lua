@@ -5,7 +5,7 @@ project "Project"
     location "Project"
     kind "ConsoleApp"
     language "C++"
-    links { "lgtest", "lgtest_main", "lpthread" }
+    links { "gtest", "gtest_main", "pthread" }
     
     files { "googletest/src/gtest_main.cc" }
 
