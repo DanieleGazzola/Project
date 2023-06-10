@@ -1,4 +1,3 @@
-workspace "Project"
     configurations { "Debug", "Release" }
 
 project "Project"
