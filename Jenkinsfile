@@ -10,7 +10,7 @@ pipeline {
       }
     }
     stage('Test') {
-      agent { node { label 'build' } }
+      agent { node { label 'master' } }
       steps {
 	echo 'Testing...'
         sh 'chmod +x script/Test.sh'
