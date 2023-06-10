@@ -11,8 +11,7 @@ project "Project"
 
     configuration "Debug"
         defines { "DEBUG" }
-        targetdir "bin/%{cfg.buildcfg}"
+        targetdir "bin/Debug"
 
     configuration "Release"
         defines { "NDEBUG" }
-        targetdir "bin/%{cfg.buildcfg}"
