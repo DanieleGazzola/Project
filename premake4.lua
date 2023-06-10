@@ -7,7 +7,7 @@ project "Project"
     language "C++"
     links { "gtest", "gtest_main", "pthread" }
     
-    files { "googletest/src/gtest_main.cc", "googletest/samples/*.cc" }
+    files { "googletest/src/gtest_main.cc" }
 
     configuration "Debug"
         defines { "DEBUG" }

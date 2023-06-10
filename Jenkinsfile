@@ -9,6 +9,12 @@ pipeline {
         archiveArtifacts artifacts: 'bin/Debug/Project', fingerprint: true
       }
     }
-    
+    stage('Test') {
+      steps {
+	      echo 'Testing...'
+        sh 'chmod +x script/Test.sh'
+        sh 'script/Test.sh'
+      }
+    }
   }
 }
