@@ -1,3 +1,4 @@
+solution "Project"
     configurations { "Debug", "Release" }
 
 project "Project"
