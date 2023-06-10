@@ -8,12 +8,12 @@ project "Project"
     
     files { "googletest/src/gtest_main.cc" }
 
-    configuartion "Debug"
+    configuration "Debug"
         defines { "DEBUG" }
         symbols "On"
         targetdir "bin/%{cfg.buildcfg}"
 
-    configuartion "Release"
+    configuration "Release"
         defines { "NDEBUG" }
         symbols "On"
         targetdir "bin/%{cfg.buildcfg}"
