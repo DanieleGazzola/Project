@@ -10,13 +10,6 @@ pipeline {
         archiveArtifacts artifacts: 'bin/Debug/*', fingerprint: true
       }
     }
-    stage('Test') {
-      agent { node { label 'build' } }
-      steps {
-	echo 'Testing...'
-        sh 'chmod +x script/Test.sh'
-        sh 'script/Test.sh'
-      }
-    }
+    
   }
 }

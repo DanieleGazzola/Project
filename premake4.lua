@@ -15,3 +15,4 @@ project "Project"
 
     configuration "Release"
         defines { "NDEBUG" }
+        targetdir "bin/Debug"
